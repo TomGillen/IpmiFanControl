@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IpmiFanControl", "IpmiFanControl\IpmiFanControl.csproj", "{1B475DF5-6E4B-41DD-8D12-9DB982E7FC30}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0520866A-1360-41C1-8565-A660D9DE9482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{882A4D61-6B77-434B-A6F9-F2CFFC58799D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B475DF5-6E4B-41DD-8D12-9DB982E7FC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B475DF5-6E4B-41DD-8D12-9DB982E7FC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B475DF5-6E4B-41DD-8D12-9DB982E7FC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B475DF5-6E4B-41DD-8D12-9DB982E7FC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0520866A-1360-41C1-8565-A660D9DE9482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0520866A-1360-41C1-8565-A660D9DE9482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0520866A-1360-41C1-8565-A660D9DE9482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0520866A-1360-41C1-8565-A660D9DE9482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882A4D61-6B77-434B-A6F9-F2CFFC58799D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882A4D61-6B77-434B-A6F9-F2CFFC58799D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882A4D61-6B77-434B-A6F9-F2CFFC58799D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882A4D61-6B77-434B-A6F9-F2CFFC58799D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE3122CA-F85C-48A1-A61E-AE6558026857}
+	EndGlobalSection
+EndGlobal

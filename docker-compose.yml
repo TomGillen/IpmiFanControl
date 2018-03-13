@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ipmifancontrol:
+    image: ipmifancontrol
+    build:
+      context: .
+      dockerfile: IpmiFanControl/Dockerfile
