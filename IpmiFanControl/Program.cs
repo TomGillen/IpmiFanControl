@@ -155,7 +155,13 @@ namespace IpmiFanControl
             }
 
             if (SustainedLoadCurve == null || !SustainedLoadCurve.Any()) {
-                SustainedLoadCurve = IdleCurve;
+                var env = Environment.GetEnvironmentVariable("SUSTAINED_FAN_CURVE");
+                if (string.IsNullOrEmpty(env)) {
+                    SustainedLoadCurve = env.Split(';');
+                }
+                else {
+                    SustainedLoadCurve = IdleCurve;
+                }
             }
         }
 
