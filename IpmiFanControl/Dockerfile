@@ -4,9 +4,9 @@ WORKDIR /app
 
 FROM microsoft/dotnet:2.0-sdk AS build
 WORKDIR /src
-COPY *.sln ./
+COPY IpmiFanControl.sln ./
 COPY IpmiFanControl/IpmiFanControl.csproj IpmiFanControl/
-RUN dotnet restore
+RUN dotnet restore -nowarn:msb3202,nu1503 -p:RestoreUseSkipNonexistentTargets=false
 COPY . .
 WORKDIR /src/IpmiFanControl
 RUN dotnet build -c Release -o /app
